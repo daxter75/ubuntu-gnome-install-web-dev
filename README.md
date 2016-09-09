@@ -9,9 +9,10 @@ Burn this ISO to DVD or create a bootable USB drive (you can use UNetbootin)
 Ubuntu GNOME can work as single OS or you can use dual boot (with Windows OS).
 
 Install Ubuntu GNOME (before installation: you can try Ubuntu GNOME without affecting your current OS installation)
-    Optional: Setup partition (swap partition should be double sized according to RAM)
-    
-    Confirm: install third-party software
+
+Optional: Setup partition (swap partition should be double sized according to RAM)
+
+Confirm: install third-party software
 
 Set: timezone, keyboard layout, name, computer name, password and select “require password to login”
 
