@@ -20,88 +20,95 @@ Setup UEFI (motherboard bios) - if needed
 
 After OS installation, log in, run terminal window and type: 
 
-sudo apt-get update
+    sudo apt-get update
 
 (use this command before every installation)
 
 Notice: text in square brackets you need to change with your data
 
 # Apache
-sudo apt-get install apache2
+
+    sudo apt-get install apache2
 
 # MySQL and PHP
-sudo apt-get install mysql-server php7.0-mysql
 
-mysql_secure_instalation   (TODO > wait for questions and type: n;n;y;y;y;y)
+    sudo apt-get install mysql-server php7.0-mysql
 
-service mysql status
+    mysql_secure_instalation   (TODO > wait for questions and type: n;n;y;y;y;y)
 
-sudo apt-get install php libapache2-mod-php
+    service mysql status
 
-sudo nano /var/www/html/info.php (TODO > make file with phpinfo() function)
+    sudo apt-get install php libapache2-mod-php
 
-sudo service apache2 restart
+    sudo nano /var/www/html/info.php (TODO > make file with phpinfo() function)
+
+    sudo service apache2 restart
 
 Type in browser: localhost/info.php
 
 Check: 
 
-php -v
+    php -v
 
-mysql -V
+    mysql -V
 
 
 # phpMyAdmin
-sudo apt-get install phpmyadmin php-mbstring php-gettext (TODO > apache2, yes, [password])
 
-sudo phpenmod mcrypt
+    sudo apt-get install phpmyadmin php-mbstring php-gettext (TODO > apache2, yes, [password])
 
-sudo phpenmod mbstring
+    sudo phpenmod mcrypt
 
-sudo nano /etc/apache2/apache2.conf (add line: Include /etc/phpmyadmin/apache.conf)
+    sudo phpenmod mbstring
 
-sudo service apache2 restart
+    sudo nano /etc/apache2/apache2.conf (add line: Include /etc/phpmyadmin/apache.conf)
+
+    sudo service apache2 restart
 
 # Change folder owner
-sudo chown -v [user] /var/www/html/
 
-sudo chmod -R 755 /var/www/html/
+    sudo chown -v [user] /var/www/html/
+
+    sudo chmod -R 755 /var/www/html/
 
 (for [user] type your linux username)
 
 # Chrome
 Downlaod 32bit or 64bit .deb file
 
-sudo dpkg -i /path/to/chrome/file
+    sudo dpkg -i /path/to/chrome/file
 
-(if has error, type: 
+if has error, type: 
 
-sudo apt-get -f install
+    sudo apt-get -f install
 
-sudo dpkg -i /path/to/chrome/file)
+    sudo dpkg -i /path/to/chrome/file
 
 # Git
-sudo apt-get install git
 
-git config --global user.name “[username]”
+    sudo apt-get install git
 
-git config --global user.email “[username@domain]”
+    git config --global user.name “[username]”
 
-git config --global push.default simple
+    git config --global user.email “[username@domain]”
 
-git config --list
+    git config --global push.default simple
+
+    git config --list
 
 # Composer
-sudo apt-get install curl
 
-curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
+    sudo apt-get install curl
+
+    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 
 Check:
 
-composer -v (display version)
+    composer -v (display version)
 
 # MySQL Workbench
-sudo apt-get install mysql-workbench
+
+    sudo apt-get install mysql-workbench
 
 # Editors
 You can install free IDE like a NetBeans or Eclipse, buy a PhpStorm, or something else...
