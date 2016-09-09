@@ -27,7 +27,9 @@ sudo apt-get install apache2
 
 # MySQL and PHP
 sudo apt-get install mysql-server php7.0-mysql
+
 mysql_secure_instalation   (TODO > wait for questions and type: n;n;y;y;y;y)
+
 service mysql status
 
 sudo apt-get install php libapache2-mod-php
