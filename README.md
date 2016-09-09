@@ -2,15 +2,15 @@
 Install Ubuntu GNOME 16.04 LTS for web dev
 
 -----
-Download latest version of Ubuntu GNOME (ISO file)
+Download latest version of [Ubuntu GNOME][uglink] (ISO file)
 
-Burn this ISO to DVD or create a bootable USB drive (you can use UNetbootin)
+Burn this ISO to DVD or create a bootable USB drive (you can use [UNetbootin][unblink])
     
 Ubuntu GNOME can work as single OS or you can use dual boot (with Windows OS).
 
-Install Ubuntu GNOME (before installation: you can try Ubuntu GNOME without affecting your current OS installation)
+Install Ubuntu GNOME (before installation: you can try Ubuntu GNOME without affecting your current OS installation - just click on "Try Ubuntu" option)
 
-Optional: Setup partition (swap partition should be double sized according to RAM)
+Optional: Setup partition (swap partition should be double sized compared to RAM)
 
 Confirm: install third-party software
 
@@ -78,7 +78,7 @@ Downlaod 32bit or 64bit .deb file
 
     sudo dpkg -i /path/to/chrome/file
 
-if has error, type: 
+if error occur, type: 
 
     sudo apt-get -f install
 
@@ -111,7 +111,7 @@ Check:
     sudo apt-get install mysql-workbench
 
 # Editors
-You can install free IDE like a NetBeans or Eclipse, buy a PhpStorm, or something else...
+You can install free IDE like NetBeans or Eclipse, purchase a PhpStorm, or something of your preference.
 
 # Advice
 Be patient! :)
@@ -124,3 +124,6 @@ https://wiki.ubuntu.com
 http://askubuntu.com
 
 https://www.digitalocean.com
+
+[uglink]: <https://ubuntugnome.org/>
+[unblink]: <https://unetbootin.github.io/>
