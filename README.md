@@ -84,7 +84,7 @@ if error occur, type:
 
     sudo dpkg -i /path/to/chrome/file
 
-Google killed 32bit version Chrome. You can install 32bit Chromium: 
+Google killed 32bit version Chrome for Linux. You can install 32bit Chromium: 
     
     sudo apt-get install chromium-browser
 
