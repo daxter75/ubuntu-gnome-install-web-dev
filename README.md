@@ -74,7 +74,7 @@ Check:
 (for [user] type your linux username)
 
 # Chrome
-Downlaod 32bit or 64bit .deb file
+Download a 64bit .deb file
 
     sudo dpkg -i /path/to/chrome/file
 
@@ -83,6 +83,10 @@ if error occur, type:
     sudo apt-get -f install
 
     sudo dpkg -i /path/to/chrome/file
+
+Google killed 32bit version Chrome. You can install 32bit Chromium: 
+    
+    sudo apt-get install chromium-browser
 
 # Git
 
